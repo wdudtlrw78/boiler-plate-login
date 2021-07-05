@@ -1,0 +1,29 @@
+{
+  "name": "boiler-plate-login",
+  "version": "1.0.0",
+  "description": "[Node.js and React] 노드,리액트, 몽고DB를 이용한 '회원가입/로그인' 보일러 플레이트 만들기",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wdudtlrw78/boiler-plate-login.git"
+  },
+  "author": "momo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wdudtlrw78/boiler-plate-login/issues"
+  },
+  "homepage": "https://github.com/wdudtlrw78/boiler-plate-login#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.13.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.9"
+  }
+}
