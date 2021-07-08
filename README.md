@@ -4,13 +4,9 @@
 
 ## 📖 Introduction
 
-### node.js, React와 MongoDB를 이용한 '회원가입/로그인' 보일러 플레이트를 제작합니다.
+node.js, React와 MongoDB를 이용한 '회원가입/로그인' 보일러 플레이트를 제작합니다.
 
 ## 📝 list
-
-### 제작할 코드와 문서들입니다.
-
-ver 1.0
 
 - [x] node js와 expres js 설치
 
@@ -21,7 +17,6 @@ ver 1.0
 - [x] github 연결
 
 <br />
-ver 1.1
 
 - [x] BodyPaser
 
@@ -76,7 +71,7 @@ Add: client login page
 
 - [x] Client의 login 페이지 제작 / 기능 구현
 
-- ![login](/front/src/images/login.JPG)
+![login](/front/src/images/login.JPG)
 
 <br />
 Add: register page
