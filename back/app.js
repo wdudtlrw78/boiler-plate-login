@@ -1,6 +1,5 @@
 const express = require('express');
 const app = express();
-const port = 3020;
 const cookieParser = require('cookie-parser');
 const config = require('./config/key');
 
@@ -85,12 +84,6 @@ app.get('/api/users/auth', auth, (req, res) => {
   });
 });
 
-app.listen(port, () => {
-  console.log(
-    `https://runkit.com/Example app listening at '✅ http://localhost:${port}`
-  );
-});
-
 app.get('/api/users/logout', auth, (req, res) => {
   User.findOneAndUpdate({ _id: req.user._id }, { token: '' }, (err, user) => {
     if (err) return res.json({ success: false, err });
@@ -98,4 +91,11 @@ app.get('/api/users/logout', auth, (req, res) => {
       success: true,
     });
   });
+});
+
+const port = 3020;
+app.listen(port, () => {
+  console.log(
+    `https://runkit.com/Example app listening at '✅ http://localhost:${port}`
+  );
 });
