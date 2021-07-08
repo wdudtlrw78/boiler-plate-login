@@ -8,6 +8,7 @@ import { applyMiddleware, createStore } from 'redux';
 import promiseMiddleware from 'redux-promise';
 import ReduxThunk from 'redux-thunk';
 import rootReducer from './_reducers/index';
+import { composeWithDevTools } from 'redux-devtools-extension';
 
 const createStoreWithMiddleware = applyMiddleware(
   promiseMiddleware,
@@ -16,10 +17,7 @@ const createStoreWithMiddleware = applyMiddleware(
 
 ReactDOM.render(
   <Provider
-    store={createStoreWithMiddleware(
-      rootReducer,
-      window.__REDUX_DEVTOOLS_EXTENSION && window.__REDUX_DEVTOOLS_EXTENSION__()
-    )}
+    store={createStoreWithMiddleware(rootReducer, composeWithDevTools())}
   >
     <App />
   </Provider>,
