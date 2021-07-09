@@ -7,8 +7,8 @@ import { loginUser } from '../../../_actions/user_action';
 function LoginPage(props) {
   const dispatch = useDispatch();
 
-  const [email, setEmail] = useState(false);
-  const [password, setPassword] = useState(false);
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
 
   const onChnageEmail = useCallback((e) => {
     setEmail(e.target.value);
@@ -18,12 +18,12 @@ function LoginPage(props) {
     setPassword(e.target.value);
   }, []);
 
-  const onSubmitHandler = useCallback((e) => {
+  const onSubmitHandler = (e) => {
     e.preventDefault();
 
     let body = {
-      email,
-      password,
+      email: email,
+      password: password,
     };
 
     dispatch(loginUser(body)).then((response) => {
@@ -33,7 +33,7 @@ function LoginPage(props) {
         alert();
       }
     });
-  }, []);
+  };
 
   return (
     <div
