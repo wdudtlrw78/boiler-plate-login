@@ -78,7 +78,11 @@ Add: register page
 
 - [x] Client의 register 페이지 제작 / 기능 구현
 
+![signup](/front/src/images/signup.JPG)
+
 <br />
 Add: Authentication Check
 
-- [ ] Client의 LandingPage logout 기능 구현 및 Authentication check을 통한 페이지 접근 권한 확인 후 접근 가능 유무 판단
+- [x] Client의 LandingPage logout 기능 구현 및 Authentication check을 통한 페이지 접근 권한 확인 후 접근 가능 유무 판단
+
+![landing](/front/src/images/landing.JPG)

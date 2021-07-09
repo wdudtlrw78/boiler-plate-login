@@ -1,5 +1,6 @@
 import React from 'react';
 import axios from 'axios';
+import { withRouter } from 'react-router-dom';
 
 function LandigPage(props) {
   const onClickLogout = () => {
@@ -16,6 +17,7 @@ function LandigPage(props) {
     <div
       style={{
         display: 'flex',
+        flexDirection: 'column',
         justifyContent: 'center',
         alignItems: 'center',
         width: '100%',
@@ -29,4 +31,4 @@ function LandigPage(props) {
   );
 }
 
-export default LandigPage;
+export default withRouter(LandigPage);
