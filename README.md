@@ -76,7 +76,7 @@ Add: client login page
 <br />
 Add: register page
 
-- [ ] Client의 register 페이지 제작 / 기능 구현
+- [x] Client의 register 페이지 제작 / 기능 구현
 
 <br />
 Add: Authentication Check
